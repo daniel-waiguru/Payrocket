@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "574369491250",
+    "firebase_url": "https://payrocket-48adc.firebaseio.com",
+    "project_id": "payrocket-48adc",
+    "storage_bucket": "payrocket-48adc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:574369491250:android:4e14546e29e20fde258f2b",
+        "android_client_info": {
+          "package_name": "io.gads.payrocket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "574369491250-pm7ap7r9coo50589sb9nvl4e5mnumfuf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqcDZRkpa58An1Li1S642SsewkGEol0Go"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "574369491250-pm7ap7r9coo50589sb9nvl4e5mnumfuf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
