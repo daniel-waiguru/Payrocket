@@ -1,4 +1,4 @@
-package io.gads.payrocket.onboarding
+package io.gads.payrocket.ui.onboarding
 
 import android.os.Bundle
 import android.view.LayoutInflater

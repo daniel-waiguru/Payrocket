@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/onBoardingFragment"
-        android:name="io.gads.payrocket.onboarding.OnBoardingFragment"
+        android:name="io.gads.payrocket.ui.onboarding.OnBoardingFragment"
         android:label="onboarding_fragment"
         tools:layout="@layout/onboarding_fragment" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/signUpFragment"
-        android:name="io.gads.payrocket.signup.SignUpFragment"
+        android:name="io.gads.payrocket.ui.signup.SignUpFragment"
         android:label="sign_up_fragment"
         tools:layout="@layout/sign_up_fragment" />
 </navigation>

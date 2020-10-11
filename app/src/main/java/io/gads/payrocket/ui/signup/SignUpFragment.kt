@@ -1,21 +1,20 @@
-package io.gads.payrocket.signup
+package io.gads.payrocket.ui.signup
 
-import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
+import com.google.firebase.auth.FirebaseAuth
 import io.gads.payrocket.R
 
 class SignUpFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = SignUpFragment()
-    }
+    private lateinit var auth: FirebaseAuth
 
-    private lateinit var viewModel: SignUpViewModel
+    val viewModel: SignUpViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

@@ -6,8 +6,6 @@
     <color name="colorAccentLight">#FFB600</color>
     <color name="colorBlueLight">#B7E2EA</color>
     <color name="colorBlueExtraLight">#F0F8FB</color>
-
-    <color name="button_color">#8E97FD</color>
-    <color name="facebook_color">#7583CA</color>
-    <color name="gray">#F2F3F7</color>
+    <color name="dark_gray">#DEDEDE</color>
+    <color name="gray">#FBFBFB</color>
 </resources>
