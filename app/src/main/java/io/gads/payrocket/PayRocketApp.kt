@@ -1,8 +1,9 @@
 package io.gads.payrocket
 
 import android.app.Application
+import dagger.hilt.android.HiltAndroidApp
 import timber.log.Timber
-
+@HiltAndroidApp
 class PayRocketApp: Application() {
     override fun onCreate() {
         super.onCreate()

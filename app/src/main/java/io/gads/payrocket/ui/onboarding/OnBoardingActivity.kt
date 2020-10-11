@@ -1,21 +1,27 @@
 package io.gads.payrocket.ui.onboarding
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.ViewGroup.LayoutParams.WRAP_CONTENT
 import android.widget.ImageView
 import android.widget.LinearLayout
-import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.get
 import androidx.viewpager2.widget.ViewPager2
+import dagger.hilt.android.AndroidEntryPoint
 import io.gads.payrocket.MainActivity
 import io.gads.payrocket.R
 import io.gads.payrocket.adapters.OnBoardingAdapter
+import io.gads.payrocket.common.Constants.HAS_COMPLETED_ONBOARDING
 import kotlinx.android.synthetic.main.activity_onboarding.*
+import javax.inject.Inject
 
+@AndroidEntryPoint
 class OnBoardingActivity : AppCompatActivity() {
+    @Inject
+    lateinit var sharedPrefs : SharedPreferences
     private val onBoardingPageChangeCallback =
         object : ViewPager2.OnPageChangeCallback(){
             override fun onPageSelected(position: Int) {
@@ -48,6 +54,7 @@ class OnBoardingActivity : AppCompatActivity() {
             onBoardingViewPager.currentItem += 1
         }
         else {
+            hasCompletedOnBoarding()
             initUi()
         }
     }
@@ -92,6 +99,11 @@ class OnBoardingActivity : AppCompatActivity() {
         else {
             navNext.setText(R.string.next)
         }
+    }
+    private fun hasCompletedOnBoarding(){
+        sharedPrefs.edit()
+            .putBoolean(HAS_COMPLETED_ONBOARDING, true)
+            .apply()
     }
     private fun initUi(){
         startActivity(Intent(this, MainActivity::class.java))
