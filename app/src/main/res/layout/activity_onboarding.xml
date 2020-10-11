@@ -15,6 +15,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <LinearLayout
+        android:id="@+id/onBoardingIndicatorContainer"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="@id/navNext"
@@ -22,7 +23,7 @@
         app:layout_constraintEnd_toStartOf="@id/navNext"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_margin="@dimen/margin_large"
-        >
+        android:orientation="horizontal">
     </LinearLayout>
 
     <TextView

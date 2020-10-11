@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import io.gads.payrocket.MainActivity
+import io.gads.payrocket.ui.onboarding.OnBoardingActivity
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -11,7 +12,7 @@ class SplashActivity : AppCompatActivity() {
         initUi()
     }
     private fun initUi(){
-        startActivity(Intent(this, MainActivity::class.java))
+        startActivity(Intent(this, OnBoardingActivity::class.java))
         finish()
     }
 }
