@@ -4,6 +4,7 @@
     <string name="onboarding_visuals">Onboarding visuals</string>
     <string name="onboarding_three">At our core is a powerful payments engine that makes moving money easy</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="get_started">Get Started</string>
     <string-array name="onboarding_titles">
         <item>Secure \n Payments</item>
         <item>Simplified \n Transactions</item>
