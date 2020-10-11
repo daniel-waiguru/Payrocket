@@ -1,4 +1,4 @@
-package io.gads.payrocket.splash
+package io.gads.payrocket.ui.splash
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
