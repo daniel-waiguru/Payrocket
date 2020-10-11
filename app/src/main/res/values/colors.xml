@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#073349</color>
-    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorPrimaryDark">#062839</color>
     <color name="colorAccent">#E84505</color>
     <color name="colorAccentLight">#FFB600</color>
     <color name="colorBlueLight">#B7E2EA</color>
     <color name="colorBlueExtraLight">#F0F8FB</color>
+
+    <color name="button_color">#8E97FD</color>
+    <color name="facebook_color">#7583CA</color>
+    <color name="gray">#F2F3F7</color>
 </resources>
