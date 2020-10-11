@@ -22,6 +22,7 @@
         android:layout_width="wrap_content"
         tools:text="Proper Budgeting"
         android:textStyle="bold"
+        android:gravity="center"
         android:textSize="@dimen/title_size_large"
         android:layout_margin="@dimen/margin"
         android:layout_gravity="center"

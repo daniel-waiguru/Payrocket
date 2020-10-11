@@ -3,4 +3,18 @@
     <string name="next">Next</string>
     <string name="onboarding_visuals">Onboarding visuals</string>
     <string name="onboarding_three">At our core is a powerful payments engine that makes moving money easy</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="onboarding_titles">
+        <item>Secure \n Payments</item>
+        <item>Simplified \n Transactions</item>
+        <item>Proper \n Budgeting</item>
+    </string-array>
+    <string-array name="onboarding_descriptions">
+        <item>Our cloud-based infrastructure provides
+            reliability, scalability, and security</item>
+        <item>At our core is a powerful payments
+            engine that makes moving money easy</item>
+        <item>At our core is a powerful payments
+            engine that makes moving money easy</item>
+    </string-array>
 </resources>
