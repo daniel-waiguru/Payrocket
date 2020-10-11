@@ -31,14 +31,14 @@ class OnBoardingFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val position = requireArguments().getInt(ARG_POSITION)
-        val onboardingTitles = requireContext()
+        val onBoardingTitles = requireContext()
             .resources.getStringArray(R.array.onboarding_titles)
-        val onboardingDesc = requireContext()
+        val onBoardingDesc = requireContext()
             .resources.getStringArray(R.array.onboarding_descriptions)
         val images = getOnBoardingImages()
-        onboardingTitle.text = onboardingTitles[position]
-        onboardingText.text = onboardingDesc[position]
-        onboardingIcon.setImageResource(images[position])
+        onBoardingTitle.text = onBoardingTitles[position]
+        onBoardingText.text = onBoardingDesc[position]
+        onBoardingIcon.setImageResource(images[position])
     }
     private fun getOnBoardingImages(): List<Int> {
         val onBoardImages: MutableList<Int> = ArrayList()

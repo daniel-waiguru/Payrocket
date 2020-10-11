@@ -11,14 +11,14 @@
     android:layout_gravity="center"
     >
     <ImageView
-        android:id="@+id/onboardingIcon"
+        android:id="@+id/onBoardingIcon"
         android:layout_width="match_parent"
         android:layout_height="@dimen/onboarding_height"
         tools:src="@drawable/ic_onboarding_one"
         android:layout_marginTop="70dp"
         android:contentDescription="@string/onboarding_visuals" />
     <TextView
-        android:id="@+id/onboardingTitle"
+        android:id="@+id/onBoardingTitle"
         android:layout_width="wrap_content"
         tools:text="Proper Budgeting"
         android:textStyle="bold"
@@ -28,7 +28,7 @@
         android:layout_gravity="center"
         android:layout_height="wrap_content"/>
     <TextView
-        android:id="@+id/onboardingText"
+        android:id="@+id/onBoardingText"
         android:layout_gravity="center"
         android:gravity="center"
         android:textStyle="bold"

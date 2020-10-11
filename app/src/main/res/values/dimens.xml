@@ -8,4 +8,5 @@
     <dimen name="indicator_size">10dp</dimen>
     <dimen name="indicator_radius">5dp</dimen>
     <dimen name="margin_top_large">50dp</dimen>
+    <dimen name="margin_top_medium">20dp</dimen>
 </resources>
