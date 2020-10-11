@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/margin_large"
+    android:layout_marginStart="@dimen/margin_large"
+    android:layout_marginEnd="@dimen/margin_large"
+    android:layout_marginBottom="70dp"
+    android:layout_gravity="center"
+    >
+    <ImageView
+        android:id="@+id/onboardingIcon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/onboarding_height"
+        tools:src="@drawable/ic_onboarding_one"
+        android:layout_marginTop="70dp"
+        android:contentDescription="@string/onboarding_visuals" />
+    <TextView
+        android:id="@+id/onboardingTitle"
+        android:layout_width="wrap_content"
+        tools:text="Proper Budgeting"
+        android:textStyle="bold"
+        android:textSize="@dimen/title_size_large"
+        android:layout_margin="@dimen/margin"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/onboardingText"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size"
+        android:layout_margin="@dimen/margin"
+        tools:text="@string/onboarding_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>

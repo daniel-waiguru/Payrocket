@@ -3,4 +3,6 @@
     <dimen name="margin">16dp</dimen>
     <dimen name="text_size">18sp</dimen>
     <dimen name="margin_large">24dp</dimen>
+    <dimen name="onboarding_height">250dp</dimen>
+    <dimen name="title_size_large">30sp</dimen>
 </resources>
