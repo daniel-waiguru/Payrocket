@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.onboarding.OnBoardingFragment">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_marginStart="@dimen/margin_large"
+        android:layout_marginEnd="@dimen/margin_large"
+        android:layout_marginBottom="70dp"
+        android:layout_gravity="center"
+        >
+        <ImageView
+            android:id="@+id/onBoardingIcon"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/onboarding_height"
+            tools:src="@drawable/ic_onboarding_one"
+            android:layout_margin="@dimen/margin"
+            android:layout_marginTop="@dimen/margin_top_medium"
+            android:contentDescription="@string/onboarding_visuals" />
+        <TextView
+            android:id="@+id/onBoardingTitle"
+            android:layout_width="wrap_content"
+            tools:text="Proper Budgeting"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="@dimen/title_size_large"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginStart="@dimen/margin"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/onBoardingText"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size"
+            android:layout_marginStart="@dimen/margin"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"
+            android:layout_marginTop="@dimen/margin"
+            tools:text="@string/onboarding_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
