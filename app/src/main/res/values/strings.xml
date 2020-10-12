@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Payrocket</string>
+
     <string name="we_are_what_we_do">We are what we do</string>
     <string name="people_are_using_payrockert">Thousand of people are using payrockert has its safe and fast</string>
     <string name="sign_up">Sign up</string>
@@ -19,4 +20,24 @@
     <string name="confirm_password_error">Password confirmation doesn\'t match Password</string>
     <string name="something_went_wrong">Something went wrong</string>
     <string name="no_internet">No Internet Connection</string>
+
+    <string name="next">Next</string>
+    <string name="onboarding_visuals">Onboarding visuals</string>
+    <string name="onboarding_three">At our core is a powerful payments engine that makes moving money easy</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="get_started">Get Started</string>
+    <string-array name="onboarding_titles">
+        <item>Secure \nPayments</item>
+        <item>Simplified \nTransactions</item>
+        <item>Proper \nBudgeting</item>
+    </string-array>
+    <string-array name="onboarding_descriptions">
+        <item>Our cloud-based infrastructure provides
+            reliability, scalability, and security</item>
+        <item>At our core is a powerful payments
+            engine that makes moving money easy</item>
+        <item>At our core is a powerful payments
+            engine that makes moving money easy</item>
+    </string-array>
+
 </resources>
