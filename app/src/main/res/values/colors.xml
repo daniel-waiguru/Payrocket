@@ -6,4 +6,6 @@
     <color name="colorAccentLight">#FFB600</color>
     <color name="colorBlueLight">#B7E2EA</color>
     <color name="colorBlueExtraLight">#F0F8FB</color>
+    <color name="white">#FFFFFF</color>
+
 </resources>

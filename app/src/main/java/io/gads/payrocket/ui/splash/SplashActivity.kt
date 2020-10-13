@@ -7,6 +7,7 @@ import android.os.Bundle
 import dagger.hilt.android.AndroidEntryPoint
 import io.gads.payrocket.MainActivity
 import io.gads.payrocket.common.Constants.HAS_COMPLETED_ONBOARDING
+import io.gads.payrocket.ui.login.LoginActivity
 import io.gads.payrocket.ui.onboarding.OnBoardingActivity
 import javax.inject.Inject
 
@@ -25,7 +26,7 @@ class SplashActivity : AppCompatActivity() {
     private fun hasCompletedOnBoarding(){
         val a = sharedPrefs.getBoolean(HAS_COMPLETED_ONBOARDING, false)
         if (sharedPrefs.getBoolean(HAS_COMPLETED_ONBOARDING, false)){
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, LoginActivity::class.java))
             finish()
         }
         else {

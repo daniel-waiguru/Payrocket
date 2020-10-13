@@ -80,4 +80,7 @@ dependencies {
 
     //Timber
     implementation "com.jakewharton.timber:timber:$timber_version"
+
+    // Toast Library
+    implementation "com.github.GrenderG:Toasty:$toast_library"
 }
