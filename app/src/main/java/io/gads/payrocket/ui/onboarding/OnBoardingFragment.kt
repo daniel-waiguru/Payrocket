@@ -1,23 +1,10 @@
 package io.gads.payrocket.ui.onboarding
 
 import android.os.Bundle
-
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
-import io.gads.payrocket.R
-
-class OnBoardingFragment : Fragment() {
-
-
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import io.gads.payrocket.R
 import kotlinx.android.synthetic.main.fragment_on_boarding.*
 
@@ -39,21 +26,14 @@ class OnBoardingFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        (activity as AppCompatActivity?)?.supportActionBar?.hide()
+        //(activity as AppCompatActivity?)?.supportActionBar?.hide()
 
-        val view = inflater.inflate(R.layout.onboarding_fragment, container, false)
-
-        val signUpButton = view.findViewById<Button>(R.id.signUpButton)
+        /*val signUpButton = view.findViewById<Button>(R.id.signUpButton)
         signUpButton.setOnClickListener {
             val action = OnBoardingFragmentDirections.actionOnBoardingFragmentToSignUpFragment()
             findNavController().navigate(action)
-        }
+        }*/
 
-        return view
-    }
-
-
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_on_boarding, container, false)
     }
 
