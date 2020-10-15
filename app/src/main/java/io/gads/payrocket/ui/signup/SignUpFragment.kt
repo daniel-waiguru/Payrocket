@@ -1,5 +1,6 @@
 package io.gads.payrocket.ui.signup
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
+import io.gads.payrocket.Home
 import io.gads.payrocket.databinding.SignUpFragmentBinding
 import io.gads.payrocket.model.ResultWrapper
 import io.gads.payrocket.ui.showErrorSnackBar
@@ -34,19 +36,23 @@ class SignUpFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        viewModel.errorString.observe(viewLifecycleOwner, {
-            showErrorSnackBar(binding.root, it)
-        })
+//        viewModel.errorString.observe(viewLifecycleOwner, {
+//            showErrorSnackBar(binding.root, it)
+//        })
+//
+//        viewModel.signUpResponse.observe(viewLifecycleOwner, {
+//            if (it is ResultWrapper.Success) {
+//                //ToDo: Go to login or main view
+//                //findNavController().popBackStack()
+//                Toast.makeText(context, "Account created", Toast.LENGTH_LONG).show()
+//            } else {
+//                showErrorSnackBar(binding.root, it)
+//            }
+//        })
 
-        viewModel.signUpResponse.observe(viewLifecycleOwner, {
-            if (it is ResultWrapper.Success) {
-                //ToDo: Go to login or main view
-                //findNavController().popBackStack()
-                Toast.makeText(context, "Account created", Toast.LENGTH_LONG).show()
-            } else {
-                showErrorSnackBar(binding.root, it)
-            }
-        })
+        val intent = Intent(context, Home::class.java)
+        startActivity(intent)
+
     }
 
 }
