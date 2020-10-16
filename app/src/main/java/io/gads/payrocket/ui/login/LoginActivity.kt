@@ -11,14 +11,15 @@ import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
-import io.gads.payrocket.MainActivity
 import io.gads.payrocket.R
+import io.gads.payrocket.ui.MainActivity
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
-    lateinit var password: String
-    lateinit var email: String
-    lateinit var firebaseAuth: FirebaseAuth
+    private lateinit var password: String
+    private lateinit var email: String
+    private lateinit var firebaseAuth: FirebaseAuth
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

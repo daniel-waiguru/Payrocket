@@ -6,12 +6,10 @@
     <color name="colorAccentLight">#FFB600</color>
     <color name="colorBlueLight">#B7E2EA</color>
     <color name="colorBlueExtraLight">#F0F8FB</color>
-<<<<<<< HEAD
+
     <color name="dark_gray">#DEDEDE</color>
     <color name="gray">#FBFBFB</color>
-||||||| 841704c
-=======
+
     <color name="white">#FFFFFF</color>
 
->>>>>>> login
 </resources>

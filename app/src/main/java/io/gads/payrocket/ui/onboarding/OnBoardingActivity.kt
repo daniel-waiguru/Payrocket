@@ -18,6 +18,7 @@ import io.gads.payrocket.common.Constants.HAS_COMPLETED_ONBOARDING
 import io.gads.payrocket.ui.MainActivity
 
 import io.gads.payrocket.ui.login.LoginActivity
+import io.gads.payrocket.ui.signup.RegisterActivity
 
 import kotlinx.android.synthetic.main.activity_onboarding.*
 import javax.inject.Inject
@@ -110,7 +111,7 @@ class OnBoardingActivity : AppCompatActivity() {
             .apply()
     }
     private fun initUi(){
-        startActivity(Intent(this, LoginActivity::class.java))
+        startActivity(Intent(this, RegisterActivity::class.java))
         finish()
     }
     override fun onDestroy() {

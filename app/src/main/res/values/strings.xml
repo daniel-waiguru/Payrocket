@@ -25,13 +25,10 @@
     <string name="onboarding_visuals">Onboarding visuals</string>
     <string name="onboarding_three">At our core is a powerful payments engine that makes moving money easy</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-<<<<<<< HEAD
-||||||| 841704c
-    <string name="get_started">Get Started</string>
-=======
-    <string name="get_started">Get Started</string>
+
+
     <string name="login_error">Login not successful</string>
->>>>>>> login
+
     <string-array name="onboarding_titles">
         <item>Secure \nPayments</item>
         <item>Simplified \nTransactions</item>
