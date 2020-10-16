@@ -22,7 +22,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingBottom="10dp"
-                tools:context=".ui.signup.SignUpFragment">
+                tools:context=".ui.signup.RegisterActivity">
 
                 <ImageView
                     android:id="@+id/imageView"

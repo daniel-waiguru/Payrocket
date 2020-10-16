@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 import io.gads.payrocket.R
-import io.gads.payrocket.ui.MainActivity
+import io.gads.payrocket.ui.main.Home
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
@@ -44,7 +44,7 @@ class LoginActivity : AppCompatActivity() {
                         .addOnCompleteListener { task ->
                             if (task.isSuccessful) {
                                 progressBar.visibility = View.GONE
-                                val intent = Intent(this, MainActivity::class.java)
+                                val intent = Intent(this, Home::class.java)
                                 startActivity(intent)
                                 finish()
                             } else {

@@ -47,6 +47,7 @@ class AuthRepository(var firebaseAuth: FirebaseAuth) {
                 Timber.w(e, TAG, "Error adding document")
             }
     }
-
-
+    fun signOut(){
+        firebaseAuth.signOut()
+    }
 }

@@ -23,8 +23,7 @@ jobs:
             ${{ runner.os }}-gradle-
       - name: Assemble Debug
         run: ./gradlew assembleDebug
-      - name: Lint Test
-        run: ./gradlew lint
+    
       - name: Build Project
         run: ./gradlew assemble
 

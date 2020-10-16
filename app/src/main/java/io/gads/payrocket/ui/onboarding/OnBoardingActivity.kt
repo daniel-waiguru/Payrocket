@@ -14,12 +14,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import io.gads.payrocket.R
 import io.gads.payrocket.adapters.OnBoardingAdapter
 import io.gads.payrocket.common.Constants.HAS_COMPLETED_ONBOARDING
-
-import io.gads.payrocket.ui.MainActivity
-
-import io.gads.payrocket.ui.login.LoginActivity
 import io.gads.payrocket.ui.signup.RegisterActivity
-
 import kotlinx.android.synthetic.main.activity_onboarding.*
 import javax.inject.Inject
 
