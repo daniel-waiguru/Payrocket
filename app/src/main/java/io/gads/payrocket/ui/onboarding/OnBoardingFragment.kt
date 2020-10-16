@@ -1,10 +1,10 @@
 package io.gads.payrocket.ui.onboarding
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import io.gads.payrocket.R
 import kotlinx.android.synthetic.main.fragment_on_boarding.*
 
@@ -20,11 +20,20 @@ class OnBoardingFragment : Fragment() {
             return onBoardingFragment
         }
     }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
+
+        //(activity as AppCompatActivity?)?.supportActionBar?.hide()
+
+        /*val signUpButton = view.findViewById<Button>(R.id.signUpButton)
+        signUpButton.setOnClickListener {
+            val action = OnBoardingFragmentDirections.actionOnBoardingFragmentToSignUpFragment()
+            findNavController().navigate(action)
+        }*/
+
         return inflater.inflate(R.layout.fragment_on_boarding, container, false)
     }
 
@@ -47,4 +56,5 @@ class OnBoardingFragment : Fragment() {
         onBoardImages.add(R.drawable.ic_onboarding_three)
         return onBoardImages
     }
+
 }

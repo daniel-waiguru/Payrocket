@@ -11,10 +11,10 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.get
 import androidx.viewpager2.widget.ViewPager2
 import dagger.hilt.android.AndroidEntryPoint
-import io.gads.payrocket.MainActivity
 import io.gads.payrocket.R
 import io.gads.payrocket.adapters.OnBoardingAdapter
 import io.gads.payrocket.common.Constants.HAS_COMPLETED_ONBOARDING
+import io.gads.payrocket.ui.MainActivity
 import kotlinx.android.synthetic.main.activity_onboarding.*
 import javax.inject.Inject
 
