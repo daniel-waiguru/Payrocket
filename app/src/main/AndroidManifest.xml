@@ -10,9 +10,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
 
         <activity android:name=".ui.onboarding.OnBoardingActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+||||||| 841704c
+        <activity android:name=".ui.onboarding.OnBoardingActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+=======
+        <activity android:name=".ui.login.LoginActivity"
+            android:theme="@style/LoginScreenTheme"/>
+
+
+
+        <activity
+            android:name=".ui.onboarding.OnBoardingActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+>>>>>>> login
         <activity
             android:name=".ui.splash.SplashActivity"
 

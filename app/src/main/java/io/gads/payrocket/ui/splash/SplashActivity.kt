@@ -11,6 +11,7 @@ import android.content.SharedPreferences
 import dagger.hilt.android.AndroidEntryPoint
 
 import io.gads.payrocket.common.Constants.HAS_COMPLETED_ONBOARDING
+import io.gads.payrocket.ui.login.LoginActivity
 import io.gads.payrocket.ui.onboarding.OnBoardingActivity
 import javax.inject.Inject
 
@@ -33,7 +34,7 @@ class SplashActivity : AppCompatActivity() {
     //check if user has completed the on boarding orientation previously
     private fun hasCompletedOnBoarding(){
         if (sharedPrefs.getBoolean(HAS_COMPLETED_ONBOARDING, false)){
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, LoginActivity::class.java))
             finish()
         }
         else {
