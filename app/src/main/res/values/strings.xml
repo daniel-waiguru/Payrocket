@@ -25,6 +25,10 @@
     <string name="onboarding_visuals">Onboarding visuals</string>
     <string name="onboarding_three">At our core is a powerful payments engine that makes moving money easy</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="login_error">Login not successful</string>
+
     <string-array name="onboarding_titles">
         <item>Secure \nPayments</item>
         <item>Simplified \nTransactions</item>
@@ -38,5 +42,29 @@
         <item>At our core is a powerful payments
             engine that makes moving money easy</item>
     </string-array>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Ehma Ugbogo</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_analytics">Analytics</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="dashboard">Home</string>
+    <string name="balance">Balance</string>
+    <string name="emergency_reserve">Emergency reserve</string>
+    <string name="favorites">Favorites</string>
+    <string name="button_used_to_add_favorite">Button used to add Favorite</string>
+    <string name="transactions">Transactions</string>
+    <string name="transfer_by_email">Transfer BY Email</string>
+    <string name="credit_alert">Credit Alert</string>
+    <string name="credits">Credits</string>
+    <string name="debits">Debits</string>
+    <string name="debit_alerts">Debit Alerts</string>
+    <string name="transfer_by_account_number">Transfer by acc No</string>
+    <string name="sign_out">Sign Out</string>
 
 </resources>
