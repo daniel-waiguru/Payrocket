@@ -9,7 +9,7 @@
         android:id="@+id/nav_dashboard"
         android:name="io.gads.payrocket.ui.dashboard.DashboardFragment"
         android:label="@string/dashboard"
-        tools:layout="@layout/dashboard_fragment"
+        tools:layout="@layout/home_fragment"
         />
 
     <fragment
