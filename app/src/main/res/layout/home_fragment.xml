@@ -208,7 +208,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_button_blue"
-            android:text="@string/transfer_by_email"
+            android:text="@string/transfer_by_account_number"
             android:textColor="@android:color/white"
             android:textSize="20sp"
             android:padding="12dp"
