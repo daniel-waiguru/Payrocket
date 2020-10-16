@@ -95,6 +95,7 @@ dependencies {
     //Timber
     implementation "com.jakewharton.timber:timber:$timber_version"
 
+
     //circular imageView
     implementation 'de.hdodenhof:circleimageview:3.1.0'
 

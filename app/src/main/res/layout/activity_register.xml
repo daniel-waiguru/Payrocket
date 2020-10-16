@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="io.gads.payrocket.ui.signup.SignUpViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.signup.RegisterActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                tools:context=".ui.signup.SignUpFragment">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_bg_1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top_large"
+                    android:text="@string/sign_up"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <EditText
+                    android:id="@+id/firstNameEditText"
+                    style="@style/CustomEditText"
+                    android:layout_marginTop="32dp"
+                    android:ems="10"
+                    android:autofillHints="false"
+                    android:hint="@string/first_name"
+                    android:text="@={viewModel.user.firstName}"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                <EditText
+                    android:id="@+id/lastNameEditText"
+                    style="@style/CustomEditText"
+                    android:ems="10"
+                    android:autofillHints="false"
+                    android:hint="@string/last_name"
+                    android:text="@={viewModel.user.lastName}"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/firstNameEditText" />
+
+                <EditText
+                    android:id="@+id/editTextPhone"
+                    style="@style/CustomEditText"
+                    android:ems="10"
+                    android:autofillHints="false"
+                    android:hint="@string/mobile_number"
+                    android:text="@={viewModel.user.phoneNum}"
+                    android:inputType="phone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lastNameEditText" />
+
+
+                <EditText
+                    android:id="@+id/editTextTextEmailAddress"
+                    style="@style/CustomEditText"
+                    android:ems="10"
+                    android:hint="@string/email"
+                    android:autofillHints="false"
+                    android:text="@={viewModel.user.email}"
+                    android:inputType="textEmailAddress"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextTextPassword"
+                    style="@style/CustomEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/password"
+                    android:text="@={viewModel.user.password}"
+                    android:inputType="textPassword"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+                <EditText
+                    android:id="@+id/confirmPasswordEditTextText"
+                    style="@style/CustomEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/confirm_password"
+                    android:text="@={viewModel.user.confirmPassword}"
+                    android:inputType="textPassword"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+                    android:autofillHints="false" />
+
+                <Button
+                    android:id="@+id/button3"
+                    style="@style/CustomButton"
+                    android:text="@string/proceed"
+                    android:onClick="@{() -> viewModel.signUp()}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/confirmPasswordEditTextText" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,12 +1,15 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
         <item name="background">@android:color/white</item>
+
         <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+
     </style>
 
     <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
@@ -47,6 +50,7 @@
         <item name="android:layout_marginTop">16dp</item>
     </style>
 
+
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
@@ -55,5 +59,17 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="LoginThemeMaterial" parent="Theme.MaterialComponents.Light.NoActionBar">
+    </style>
+    <style name="LoginScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    </style>
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">#fff</item>
+        <item name="boxStrokeWidth">2dp</item>
+    </style>
+
+
 
 </resources>
