@@ -65,5 +65,6 @@
     <string name="debits">Debits</string>
     <string name="debit_alerts">Debit Alerts</string>
     <string name="transfer_by_account_number">Transfer by acc No</string>
+    <string name="sign_out">Sign Out</string>
 
 </resources>

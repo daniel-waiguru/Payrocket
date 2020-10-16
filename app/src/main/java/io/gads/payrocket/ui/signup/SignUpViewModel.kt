@@ -63,4 +63,5 @@ class SignUpViewModel : ViewModel() {
         } else
             return false
     }
+    fun signOut() = authRepository.signOut()
 }

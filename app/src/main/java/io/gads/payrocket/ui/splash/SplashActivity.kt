@@ -8,9 +8,9 @@ import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import dagger.hilt.android.AndroidEntryPoint
-import io.gads.payrocket.Home
 import io.gads.payrocket.common.Constants.HAS_COMPLETED_ONBOARDING
 import io.gads.payrocket.ui.login.LoginActivity
+import io.gads.payrocket.ui.main.Home
 import io.gads.payrocket.ui.onboarding.OnBoardingActivity
 import javax.inject.Inject
 
