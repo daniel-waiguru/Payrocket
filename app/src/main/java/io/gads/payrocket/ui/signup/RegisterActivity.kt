@@ -21,20 +21,20 @@ class RegisterActivity : AppCompatActivity() {
         //setContentView(R.layout.activity_register)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_register)
         binding.viewModel =viewModel
-        viewModel.errorString.observe(this, {
-            showErrorSnackBar(binding.root, it)
-        })
+//        viewModel.errorString.observe(this, {
+//            showErrorSnackBar(binding.root, it)
+//        })
 
-        viewModel.signUpResponse.observe(this, {
-            if (it is ResultWrapper.Success) {
-                //ToDo: Go to login or main view
-                //findNavController().popBackStack()
-                startActivity(Intent(this, LoginActivity::class.java))
-                finish()
-                Toast.makeText(this, "Account created", Toast.LENGTH_LONG).show()
-            } else {
-                showErrorSnackBar(binding.root, it)
-            }
-        })
+//        viewModel.signUpResponse.observe(this, {
+//            if (it is ResultWrapper.Success) {
+//                //ToDo: Go to login or main view
+//                //findNavController().popBackStack()
+//                startActivity(Intent(this, LoginActivity::class.java))
+//                finish()
+//                Toast.makeText(this, "Account created", Toast.LENGTH_LONG).show()
+//            } else {
+//                showErrorSnackBar(binding.root, it)
+//            }
+//        })
     }
 }
