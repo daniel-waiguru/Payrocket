@@ -12,7 +12,6 @@ import io.gads.payrocket.common.Constants.HAS_COMPLETED_ONBOARDING
 import io.gads.payrocket.ui.login.LoginActivity
 import io.gads.payrocket.ui.main.Home
 import io.gads.payrocket.ui.onboarding.OnBoardingActivity
-import io.gads.payrocket.ui.signup.RegisterActivity
 import javax.inject.Inject
 
 
@@ -52,7 +51,7 @@ class SplashActivity : AppCompatActivity() {
             finish()
         }
         else {
-            startActivity(Intent(this, RegisterActivity::class.java))
+            startActivity(Intent(this, LoginActivity::class.java))
             finish()
         }
     }

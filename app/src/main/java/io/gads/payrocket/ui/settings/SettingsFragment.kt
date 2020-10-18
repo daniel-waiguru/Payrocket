@@ -9,7 +9,6 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import io.gads.payrocket.R
-import io.gads.payrocket.ui.home.SettingsViewModel
 
 class SettingsFragment : Fragment() {
 

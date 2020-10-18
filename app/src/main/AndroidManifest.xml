@@ -24,7 +24,8 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".ui.login.LoginActivity"
-            android:theme="@style/LoginScreenTheme" />
+            android:theme="@style/LoginScreenTheme"
+            android:launchMode="singleTask"/>
 
         <activity
             android:name=".ui.splash.SplashActivity"
