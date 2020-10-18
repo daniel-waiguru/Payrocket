@@ -1,4 +1,4 @@
-package io.gads.payrocket.ui.home
+package io.gads.payrocket.ui.settings
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

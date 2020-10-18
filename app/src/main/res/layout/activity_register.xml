@@ -133,8 +133,18 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/confirmPasswordEditTextText" />
-
-
+                <TextView
+                    android:id="@+id/navToSignIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@id/button3"
+                    app:layout_constraintStart_toStartOf="@id/button3"
+                    app:layout_constraintEnd_toEndOf="@id/button3"
+                    android:layout_marginTop="@dimen/margin_top_large"
+                    android:text="@string/already_member"
+                    />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </ScrollView>
 

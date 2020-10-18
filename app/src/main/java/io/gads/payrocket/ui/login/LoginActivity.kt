@@ -13,6 +13,7 @@ import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 import io.gads.payrocket.R
 import io.gads.payrocket.ui.main.Home
+import io.gads.payrocket.ui.signup.RegisterActivity
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
@@ -26,6 +27,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
         window.statusBarColor = Color.WHITE
         firebaseAuth = FirebaseAuth.getInstance()
+        navToSignUp.setOnClickListener { initUi() }
         proceedButton.setOnClickListener {
             password = passwordEditText.text.toString()
             email = emailEditText.text.toString()
@@ -66,5 +68,8 @@ class LoginActivity : AppCompatActivity() {
             inputMethodManger.hideSoftInputFromWindow(currentFocus!!.windowToken, 0)
         }
         return super.dispatchTouchEvent(ev)
+    }
+    private fun initUi() {
+        startActivity(Intent(this, RegisterActivity::class.java))
     }
 }

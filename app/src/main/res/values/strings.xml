@@ -6,12 +6,10 @@
     <string name="sign_up">Sign up</string>
     <string name="already_have_an_account">Already have an account?\u0020</string>
     <string name="login">Login</string>
-    <string name="password">password</string>
-    <string name="email">Email</string>
+
     <string name="get_started">Get Started</string>
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name</string>
-    <string name="proceed">Proceed</string>
     <string name="mobile_number">Mobile Number</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="invalid_mail">Invalid Email</string>
@@ -66,5 +64,12 @@
     <string name="debit_alerts">Debit Alerts</string>
     <string name="transfer_by_account_number">Transfer by acc No</string>
     <string name="sign_out">Sign Out</string>
+    <string name="sign_in">Sign In</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="remember_login">Remember Login</string>
+    <string name="proceed">Proceed</string>
+    <string name="no_account">New User? Sign Up</string>
+    <string name="already_member">Already Registered? Sign In</string>
 
 </resources>
