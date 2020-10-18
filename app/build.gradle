@@ -102,4 +102,7 @@ dependencies {
     //circular image view
     implementation 'com.mikhaellopez:circularprogressbar:3.0.3'
 
+    //dailing code selection
+    implementation 'com.hbb20:ccp:2.4.0'
+
 }
